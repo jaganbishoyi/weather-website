@@ -45,7 +45,7 @@ weatherForm.addEventListener('submit', (e) => {
                 const locationImageURL = 'https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/' + data.longitude + ',' + data.latitude + ',6,15,30/600x300?before_layer=admin-0-boundary&logo=false&access_token=pk.eyJ1IjoicXdlcnR5amQiLCJhIjoiY2tycDRlMmdkMTFyMDJvcnFzOWMwYW1yciJ9.jA0scF4ruvGXDiQLGiXB0A';
                 let locationImage = document.createElement("img");
                 locationImage.src = locationImageURL;
-                locationImage.setAttribute("id", "location-map");
+                locationImage.className = "img-responsive";;
                 messageTwo.appendChild(locationImage);
             }
         });
