@@ -35,9 +35,9 @@ app.get('/about', (req, res) => {
     });
 });
 
-app.get('/help', (req, res) => {
-    res.render('help', {
-        title: 'Help',
+app.get('/fact', (req, res) => {
+    res.render('fact', {
+        title: 'Weather facts',
         message: 'This is a help page',
         name: 'Jagan Mohan Bishoyi'
     });
@@ -71,11 +71,11 @@ app.get('/weather', (req, res) => {
 
 });
 
-app.get('/help/*', (req, res) => {
+app.get('/fact/*', (req, res) => {
     res.render('404', {
         title: '404',
         name: 'Jagan Mohan Bishoyi',
-        errorMessage: 'Help article not found'
+        errorMessage: 'Fact not found'
     });
 });
 

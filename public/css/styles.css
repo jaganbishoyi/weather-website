@@ -4,6 +4,7 @@ body {
   max-width: 650px;
   margin: 0 auto;
   padding: 0 16px;
+  font-size: 16px;
 
   display: flex;
   flex-direction: column;
@@ -15,6 +16,11 @@ footer {
   border-top: 1px solid #eeeeee;
   margin-top: 16px;
   padding: 16px 0;
+}
+
+a.author {
+  text-decoration: none;
+  color: #0092c1;
 }
 
 header {
@@ -33,8 +39,12 @@ header a {
   text-decoration: none;
 }
 
+header a:hover {
+  color: #0092c1;
+}
+
 img.portrait {
-  width: 400px;
+  width: 250px;
   border-radius: 10px;
 }
 
@@ -52,4 +62,46 @@ button {
   border: 1px solid #888888;
   background: #888888;
   padding: 8px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+img.fact-image {
+  border-radius: 10px;
+  width: 600px;
+}
+
+ol.facts {
+  padding-left: 25px;
+}
+
+ol.facts li {
+  line-height: 1.62;
+  margin: 10px 0;
+}
+
+img#current-weather-icon {
+  width: 36px;
+  border-radius: 5px;
+}
+
+#weather-descriptions {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+p#descriptions {
+  line-height: 1.5;
+}
+
+p#observation-time {
+  line-height: 1.5;
+}
+
+#observation-time {
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-left: 10px;
 }

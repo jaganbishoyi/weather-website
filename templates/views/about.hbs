@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="/images/weather.ico">
+    <link rel="icon" href="/images/weather.png">
     <script src="/js/app.js"></script>
     <title>About</title>
 </head>
@@ -14,8 +14,10 @@
 <body>
     <div class="main-content">
         {{>header}}
-        <p>This site was created by Jagan Mohan Bishoyi. It uses data from mapbox.com and weatherstack.com!</p>
-        <img class="portrait" src="/images/teamwork.jpg" alt="" srcset="">
+        <p>This site was created by <a class="author" href="https://jaganbishoyi.github.io/" target="_blank"
+                rel="noopener noreferrer">
+                {{name}}.</a> It uses data from mapbox.com and weatherstack.com!</p>
+        <img class="portrait" src="/images/me.jpg" alt="" srcset="">
     </div>
     {{>footer}}
 </body>
