@@ -1,14 +1,14 @@
 {
-  "name": "web-server",
+  "name": "weather-application",
   "version": "1.0.0",
-  "description": "",
+  "description": "This site was created by Jagan Mohan Bishoyi. It uses data from mapbox.com and weatherstack.com!",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js -e js,hbs,css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jagan Mohan Bishoyi",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
