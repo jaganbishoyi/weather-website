@@ -38,7 +38,7 @@ app.get('/about', (req, res) => {
 app.get('/fact', (req, res) => {
     res.render('fact', {
         title: 'Weather facts',
-        message: 'This is a help page',
+        message: 'This is a fact page',
         name: 'Jagan Mohan Bishoyi'
     });
 });

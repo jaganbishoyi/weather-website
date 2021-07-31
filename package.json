@@ -1,6 +1,6 @@
 {
   "name": "weather-application",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This site was created by Jagan Mohan Bishoyi. It uses data from mapbox.com and weatherstack.com!",
   "main": "index.js",
   "scripts": {
