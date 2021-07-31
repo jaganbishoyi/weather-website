@@ -6,7 +6,7 @@ const geocode = (address, callback) => {
         encodeURIComponent(address) +
         '.json?access_token=pk.eyJ1IjoicXdlcnR5amQiLCJhIjoiY2tycDRlMmdkMTFyMDJvcnFzOWMwYW1yciJ9.jA0scF4ruvGXDiQLGiXB0A';
 
-    request({ url, json: true }, (error, { body }) => {
+    request({ url, json: true }, (error, { body } = {}) => {
         if (error) {
             callback('Unable to connect location services!', undefined);
         } else if (body.features.length === 0) {

@@ -1,7 +1,7 @@
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
-const messageOne = document.getElementById('message-1');
-const messageTwo = document.getElementById('message-2');
+const messageOne = document.getElementById('message');
+const messageTwo = document.getElementById('weather-info');
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -20,7 +20,6 @@ weatherForm.addEventListener('submit', (e) => {
             if (data.error) {
                 messageOne.textContent = data.error;
             } else {
-                console.log(data);
                 messageOne.textContent = 'Showing weather for ' + data.location;
 
                 const forecast = data.forecast;
@@ -42,6 +41,12 @@ weatherForm.addEventListener('submit', (e) => {
                 desc.textContent = descContent;
                 desc.setAttribute("id", "descriptions");
                 messageTwo.appendChild(desc);
+
+                const locationImageURL = 'https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/' + data.longitude + ',' + data.latitude + ',6,15,30/600x300?before_layer=admin-0-boundary&logo=false&access_token=pk.eyJ1IjoicXdlcnR5amQiLCJhIjoiY2tycDRlMmdkMTFyMDJvcnFzOWMwYW1yciJ9.jA0scF4ruvGXDiQLGiXB0A';
+                let locationImage = document.createElement("img");
+                locationImage.src = locationImageURL;
+                locationImage.setAttribute("id", "location-map");
+                messageTwo.appendChild(locationImage);
             }
         });
     });
